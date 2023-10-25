@@ -16,7 +16,7 @@ export class FootballService {
 
   private headers = {
     'x-rapidapi-host': 'v3.football.api-sports.io',
-    'x-rapidapi-key': '71c78c39659bcc7b82cb430c9541b9bb'
+    'x-rapidapi-key': '920753df6ed093838e527fe46e6be439'
   }
 
   constructor(private _http: HttpClient) {
