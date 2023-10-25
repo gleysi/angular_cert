@@ -1,0 +1,21 @@
+<div class="table-responsive table-striped">
+	<table class="table">
+		<tbody>
+			<tr *ngFor="let result of results">
+				<td><img [src]="result.teams!.home.logo" [alt]="result!.teams!.home!.name + ' logo'" width="20" height="20"/></td>
+				<td>{{result!.teams!.home!.name}}</td>
+				<td>{{result!.goals!.home}}</td>
+				<td>-</td>
+				<td>{{result!.goals!.away}}</td>
+				<td>{{result!.teams!.away!.name}}</td>
+				<td><img [src]="result!.teams!.away!.logo" [alt]="result!.teams!.away!.name + ' logo'" width="20" height="20"/></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div *ngIf="noResults">
+	<p class="bg-warning">There are no results for this</p>
+</div>
+<div>
+  <button type="button" class="btn btn-primary" (click)="goBack()">Back</button><br>
+</div>
